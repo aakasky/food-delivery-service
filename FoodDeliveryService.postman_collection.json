@@ -1,0 +1,39 @@
+{
+  "info": {
+    "name": "Rooftop Food Delivery Service",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "id": "17b9ef4a-6697-486f-a2a0-451be23b56f3",
+      "name": "Allocate Driver",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/delivery/allocate",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "delivery",
+            "allocate"
+          ],
+          "port": "8080"
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\"totalDrivers\":2,\"orders\":[{\"orderTime\":1,\"travelTime\":10},{\"orderTime\":4,\"travelTime\":20},{\"orderTime\":15,\"travelTime\":5},{\"orderTime\":22,\"travelTime\":20},{\"orderTime\":24,\"travelTime\":10},{\"orderTime\":25,\"travelTime\":10}]}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

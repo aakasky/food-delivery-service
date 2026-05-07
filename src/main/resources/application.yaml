@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: food-delivery-service
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root: INFO
+
+app:
+  allocation:
+    strategy: LOWEST_INDEX
